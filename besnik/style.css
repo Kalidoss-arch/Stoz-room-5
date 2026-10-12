@@ -21,12 +21,12 @@ span {
 }
 
 .primary-btn {
-  background-color: #231A36;
+  background-color: #231a36;
   color: #ffffff;
 }
 
 .secondary-btn {
-  background-color:rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -39,14 +39,14 @@ body {
   padding: 0px 15px;
 }
 
-.bg{
-   background: url("./img/banner/bg.png") no-repeat center;
-   /* background-repeat: no-repeat;
+.bg {
+  background: url("./img/banner/bg.png") no-repeat center;
+  /* background-repeat: no-repeat;
    background-position: center; */
-   background-size: cover;
+  background-size: cover;
 }
 
-.sec-heading{
+.sec-heading {
   text-align: center;
   margin-bottom: 45px;
 }
@@ -89,34 +89,34 @@ header {
 
 /* clients */
 
-.clients{
-    padding: 80px 0px;
+.clients {
+  padding: 80px 0px;
 }
 
-.clients h4{
-    text-align: center;
-    margin-bottom: 50px;
+.clients h4 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.clients-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 /* Solutions */
 
-.solutions{
+.solutions {
   padding: 100px 0px;
 }
 
-.solutions .container{
-   max-width: 750px;
+.solutions .container {
+  max-width: 750px;
 }
 
-.solutions-wrapper > div{
+.solutions-wrapper > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,28 +128,110 @@ header {
   text-align: right;
 } */
 
+/* need */
 
+.need {
+  padding: 100px 0px 180px 0px;
+}
+
+.need-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.need-wrapper > div {
+  width: 30%;
+  position: relative;
+}
+
+.need-wrapper > div img {
+  width: 100%;
+}
+
+.need-wrapper > div > div {
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+  width: 85%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.need-wrapper > div > div > div {
+  display: flex;
+  gap: 25px;
+}
+
+.need-wrapper h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.need-wrapper h5 {
+  font-size: 24px;
+}
+
+.need-wrapper span {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+/* .need-wrapper a{
+  color: ;
+} */
+
+/* happy */
+
+.happy {
+  padding: 100px 0px;
+}
+
+.happy h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.star {
+  position: absolute;
+  top: -50px;
+  left: -45px;
+}
 
 @media screen and (min-width: 768px) {
-    .line-break{
-        display: block;
-    }
+  .line-break {
+    display: block;
+  }
 
-    .solutions-wrapper > div > div{
-     width: 50%;
-    }
+  .solutions-wrapper > div > div {
+    width: 50%;
+  }
 
-    .solutions-wrapper > div:nth-child(odd) > div:nth-child(2){
-     text-align: right;
-    }
+  .solutions-wrapper > div:nth-child(odd) > div:nth-child(2) {
+    text-align: right;
+  }
 
-
-
+  .sec-heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
 }
 @media screen and (max-width: 992px) {
-  .clients-wrapper div{
+  .clients-wrapper div {
     width: 30%;
     margin-bottom: 40px;
+  }
+
+  .need-wrapper > div:nth-child(1),
+  .need-wrapper > div:nth-child(2) {
+    width: 48%;
+    margin-bottom: 120px;
+  }
+
+  .need-wrapper > div:nth-child(3) {
+    width: 100%;
   }
 }
 
@@ -159,31 +241,32 @@ header {
     gap: 20px;
   }
 
-  .banner h1{
+  .banner h1 {
     font-size: 50px;
   }
 
-  .clients-wrapper div{
+  .clients-wrapper div {
     width: 50%;
   }
 
-  .solutions-wrapper > div{
+  .solutions-wrapper > div {
     flex-direction: column;
     text-align: center;
     gap: 50px;
     margin-bottom: 50px;
   }
 
-  .solutions-wrapper > div:nth-child(2){
-      flex-direction: column-reverse;
+  .solutions-wrapper > div:nth-child(2) {
+    flex-direction: column-reverse;
   }
 }
 
 @media screen and (max-width: 576px) {
-
-  .clients-wrapper div{
+  .clients-wrapper div {
     width: 100%;
   }
+
+  .need-wrapper > div {
+    width: 100% !important;
+  }
 }
-
-
